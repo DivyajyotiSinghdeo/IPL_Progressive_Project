@@ -1,9 +1,9 @@
 package com.wecp.progressive.exception;
 
-import java.sql.SQLException;
+public class TeamCricketerLimitExceededException extends RuntimeException{
 
-public class TeamCricketerLimitExceededException extends SQLException {
-    public TeamCricketerLimitExceededException(String msg){
-        super(msg);
+    public TeamCricketerLimitExceededException(String message)
+    {
+        super(message);
     }
 }
